@@ -1,0 +1,90 @@
+@import "_minix.scss";
+@import "common.scss";
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: pxTorem(200px);
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        .swiper-wrapper {
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .input {
+        position: absolute;
+        top: 5%;
+        color: #999;
+        width: 85%;
+        height: pxTorem(30px);
+        background: #fff;
+        border-radius: pxTorem(10px);
+        margin-left: 7%;
+        line-height: pxTorem(30px);
+        padding: 0 pxTorem(10px);
+    }
+}
+
+section {
+    flex: 1;
+    width: 100%;
+    overflow-y: scroll;
+    .list {
+        width: 100%;
+        height: pxTorem(140px);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        dl {
+            width: 20%;
+            text-align: center;
+            dt {
+                text-align: center;
+            }
+            dd {
+                text-align: center;
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: pxTorem(55px);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    dl {
+        width: 20%;
+        text-align: center;
+        dt {
+            text-align: center;
+            .iconfont {
+                font-size: pxTorem(15px);
+            }
+        }
+        dd {
+            text-align: center;
+        }
+    }
+}
